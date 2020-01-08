@@ -1,6 +1,8 @@
 <template>
   <div>
        <b>{{msg}}</b>
+       <button v-on:click="clicou">Clicou</button>
+       <!-- <router-view></router-view> -->
   </div>
 </template>
 
@@ -10,6 +12,11 @@ export default {
        return {
           msg:'route specific in component Hello-World'        
        }
+     },
+     methods:{
+        clicou(){
+           this.msg = 'adadad';
+        }
      }
 }
 </script>
